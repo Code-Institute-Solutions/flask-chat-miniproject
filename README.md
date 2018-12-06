@@ -1,3 +1,3 @@
-# Flask Chat App
+# Flask Chat Mini Project
 
-This is a chat application written in Flask. The purpose of this project is to take data from a URL and store the information in a list
+The source code files for the Flask Chat project. Each folder relates to a specific lesson / video.
