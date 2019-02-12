@@ -15,7 +15,7 @@ def add_messages(username, message):
     messages.append(messages_dict)
     
     
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
     """Main page with instructions"""
     
@@ -28,7 +28,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/<username>")
+@app.route("/<username>", methods=["GET", "POST"])
 def user(username):
     """Display chat messages"""
     
