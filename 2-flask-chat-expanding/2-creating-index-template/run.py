@@ -10,8 +10,8 @@ def add_messages(username, message):
     """Add messages to the `messages` list"""
     now = datetime.now().strftime("%H:%M:%S")
     messages.append("({}) {}: {}".format(now, username, message))
-    
-    
+
+
 def get_all_messages():
     """Get all of the messages and separate them with a `br`"""
     return "<br>".join(messages)
@@ -34,5 +34,6 @@ def send_message(username, message):
     """Create a new message and redirect back to the chat page"""
     add_messages(username, message)
     return redirect(username)
-    
+
+
 app.run(host=os.getenv("IP"), port=int(os.getenv("PORT")), debug=True)
