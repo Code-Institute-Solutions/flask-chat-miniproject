@@ -15,7 +15,7 @@ def add_messages(username, message):
     messages.append(messages_dict)
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
     """Main page with instructions"""
     if request.method == "POST":
