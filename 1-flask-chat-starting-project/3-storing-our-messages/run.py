@@ -17,7 +17,7 @@ def index():
 
 @app.route("/<username>")
 def user(username):
-    return "Welcome {0}".format(username, messages)
+    return "Welcome {0}".format(username)
 
 
 @app.route("/<username>/<message>")
